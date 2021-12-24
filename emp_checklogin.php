@@ -21,7 +21,7 @@ error_reporting(E_ALL);
 
 ob_start();
 session_start();
-require('connection.php');
+require('emp_connection.php');
 
 
 // Defining your login details into variables
