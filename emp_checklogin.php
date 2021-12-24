@@ -45,7 +45,7 @@ if($count==1){
 // If everything checks out, you will now be forwarded to student.php
 $user = mysqli_fetch_assoc($sql);
 $_SESSION['member_id'] = $user['member_id'];
-header("location:emp_employee.php");
+header("location:employee.php");
 }
 //If the username or password is wrong, you will receive this message below.
 else {
