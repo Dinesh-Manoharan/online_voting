@@ -1,5 +1,5 @@
 <?php
-$host = 'onlinevotingsqlaerver.database.windows.net';
+$host = 'onlinevotingsqlaerver.mysql.database.azure.com';
 $username = 'sqladmin@onlinevotingsqlaerver';
 $password = 'Fastrack#28';
 $db_name = 'vote';
