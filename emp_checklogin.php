@@ -35,7 +35,7 @@ $mypassword = stripslashes($mypassword);
 //$myusername = mysqli_real_escape_string($myusername);
 //$mypassword = mysqli_real_escape_string($mypassword);
 
-$count=mysqli_query($con, "SELECT * FROM tbmembers WHERE email='$myusername' and password='$mypassword'");
+$count=1;
 
 if($count==1){
 // If everything checks out, you will now be forwarded to student.php
