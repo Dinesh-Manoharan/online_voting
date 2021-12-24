@@ -35,7 +35,7 @@ $mypassword = stripslashes($mypassword);
 //$myusername = mysqli_real_escape_string($myusername);
 //$mypassword = mysqli_real_escape_string($mypassword);
 
-$sql=mysqli_query($con, "SELECT * FROM tbmembers WHERE email='$myusername' and password='$mypassword'");
+$sql=mysqli_query($conn, "SELECT * FROM tbmembers WHERE email='$myusername' and password='$mypassword'");
 
 // Checking table row
 $count=mysqli_num_rows($sql);
