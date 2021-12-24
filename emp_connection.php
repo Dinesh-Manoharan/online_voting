@@ -10,7 +10,7 @@ $conn = mysqli_init();
 mysqli_ssl_set($conn,NULL,NULL, "/var/www/html/DigiCertGlobalRootG2.crt.pem", NULL, NULL);
 
 // Establish the connection
-mysqli_real_connect($conn, 'onlinevotingsqlaerver.database.windows.net', 'sqladmin@onlinevotingsqlaerver', 'Fastrack#28', 'vote', 3306, NULL, MYSQLI_CLIENT_SSL);
+mysqli_real_connect($conn, 'onlinevotingsqlaerver.database.windows.net', 'sqladmin@onlinevotingsqlaerver', 'Fastrack#28', 'vote');
 
 //If connection failed, show the error
 if (mysqli_connect_errno())
