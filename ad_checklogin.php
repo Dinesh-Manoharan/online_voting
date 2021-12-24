@@ -42,7 +42,7 @@ $mypassword = stripslashes($encrypted_mypassword);
 
 $sql=mysqli_query($con, "SELECT * FROM tbadministrators WHERE email='$myusername' and password='$encrypted_mypassword'");
 // Checking table row
-$count = 1;
+$count = mysqli_num_rows($sql);
 
 // If username and password is a match, the count will be 1
 if($count)
