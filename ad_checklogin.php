@@ -40,7 +40,7 @@ $mypassword = stripslashes($encrypted_mypassword);
 
 //echo $mypassword." ".$myusername;
 
-$sql=mysqli_query($con, "SELECT * FROM tbadministrators WHERE email='$myusername' and password='$mypassword'");
+$sql=mysqli_query($con, "SELECT * FROM tbadministrators WHERE email='$myusername' and password='$encrypted_mypassword'");
 // Checking table row
 $count = mysqli_num_rows($sql);
 
