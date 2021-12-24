@@ -1,6 +1,6 @@
 <?php
 $host = 'onlinevotingsqlaerver.database.windows.net';
-$username = 'sqladmin';
+$username = 'sqladmin@onlinevotingsqlaerver';
 $password = 'Fastrack#28';
 $db_name = 'vote';
 
