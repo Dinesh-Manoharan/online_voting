@@ -35,13 +35,17 @@ $mypassword = stripslashes($mypassword);
 //$myusername = mysqli_real_escape_string($myusername);
 //$mypassword = mysqli_real_escape_string($mypassword);
 
-$count=1;
+$sql=mysqli_query($con, "SELECT * FROM tbmembers WHERE email='$myusername' and password='$mypassword'");
+
+// Checking table row
+$count=mysqli_num_rows($sql);
+// If username and password is a match, the count will be 1
 
 if($count==1){
 // If everything checks out, you will now be forwarded to student.php
 $user = mysqli_fetch_assoc($sql);
 $_SESSION['member_id'] = $user['member_id'];
-header("location:employee.php");
+header("location:emp_employee.php");
 }
 //If the username or password is wrong, you will receive this message below.
 else {
