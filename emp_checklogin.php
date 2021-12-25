@@ -37,11 +37,11 @@ $mypassword = stripslashes($encrypted_mypassword);
 //$myusername = mysqli_real_escape_string($myusername);
 //$mypassword = mysqli_real_escape_string($encrypted_mypassword);
 
-$sql=mysqli_query($conn,"SELECT * FROM tbmembers WHERE email='$myusername' and password='$encrypted_mypassword'");
+$result="SELECT * FROM tbmembers WHERE email='$myusername' and password='$encrypted_mypassword'";
+$sql=mysqli_query($con,$result);
 
-// Checking table row
 
-// If username and password is a match, the count will be 1
+mysqli_select_db($con,"vote") or die ("no database");
 
 if(mysqli_num_rows($sql)>0){
 // If everything checks out, you will now be forwarded to employee.php
