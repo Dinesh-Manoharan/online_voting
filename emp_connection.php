@@ -8,9 +8,9 @@ $db_name = 'vote';
 $con = mysqli_init();
 
 // Establish the connect
-//mysqli_real_connect($con, 'onlinevotingsqlaerver.mysql.database.azure.com', 'sqladmin' , 'Fastrack#28' , 'vote' , 3306, NULL, );
 
-$con=mysqli_connect('onlinevotingsqlaerver.mysql.database.azure.com', 'sqladmin' , 'Fastrack#28' , 'vote' , 3306 , NULL , MYSQLI_CLIENT_SSL);
+
+$con=mysqli_connect('onlinevotingsqlaerver.mysql.database.azure.com', 'sqladmin' , 'Fastrack#28' , 'vote' , 3306 , NULL );
 
 
 //If connection failed, show the error
