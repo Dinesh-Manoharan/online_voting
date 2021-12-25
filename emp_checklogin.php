@@ -41,7 +41,7 @@ $result="SELECT * FROM tbmembers WHERE email='$myusername' and password='$encryp
 $sql=mysqli_query($con,$result);
 
 
-mysqli_select_db($con,"vote") or die ("no database");
+
 
 if(mysqli_num_rows($sql)>0){
 // If everything checks out, you will now be forwarded to employee.php
