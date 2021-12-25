@@ -28,14 +28,16 @@ require('emp_connection.php');
 $myusername=$_POST['myusername'];
 $mypassword=$_POST['mypassword'];
 
- //MD5 Hash for security
+ $encrypted_mypassword=md5($mypassword);//MD5 Hash for security
+
 // MySQL injection protections
 $myusername = stripslashes($myusername);
-$mypassword = stripslashes($mypassword);
-//$myusername = mysqli_real_escape_string($myusername);
-//$mypassword = mysqli_real_escape_string($mypassword);
+$mypassword = stripslashes($encrypted_mypassword);
 
-$sql=mysqli_query("SELECT * FROM tbmembers WHERE email='$myusername' and password='$mypassword'",$con);
+//$myusername = mysqli_real_escape_string($myusername);
+//$mypassword = mysqli_real_escape_string($encrypted_mypassword);
+
+$sql=mysqli_query("SELECT * FROM tbmembers WHERE email='$myusername' and password='$encrypted_mypassword'",$con);
 
 // Checking table row
 
