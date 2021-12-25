@@ -10,7 +10,7 @@ $con = mysqli_init();
 // Establish the connect
 //$con=mysqli_connect('onlinevotingsqlaerver.mysql.database.azure.com', , , ,3306, NULL, );
 mysqli_real_connect(
-    mysqli $link,
+    mysqli $link
     string $host = 'onlinevotingsqlaerver.mysql.database.azure.com',
     string $username = 'sqladmin',
     string $passwd = 'Fastrack#28',
