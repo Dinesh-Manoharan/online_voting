@@ -38,7 +38,7 @@ $mypassword = stripslashes($encrypted_mypassword);
 //$mypassword = mysqli_real_escape_string($encrypted_mypassword);
 
 $result="SELECT * FROM tbmembers WHERE email='$myusername' and password='$encrypted_mypassword'";
-$sql=mysqli_query($con,$result);
+$sql=mysqli_query($result);
 
 
 
