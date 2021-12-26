@@ -10,7 +10,7 @@ $con = mysqli_init();
 // Establish the connect
 
 
-$con=mysqli_connect('onlinevotingsqlaerver.mysql.database.azure.com', 'sqladmin' , 'Fastrack#28', 'vote', 3306);
+$con=mysqli_connect('onlinevotingsqlaerver.mysql.database.azure.com', 'sqladmin' , 'Fastrack#28', 'vote', 3306, NULL);
 
 
 //If connection failed, show the error
