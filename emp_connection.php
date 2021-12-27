@@ -1,5 +1,5 @@
 <?php
-$host = 'onlinevotingsqlaerver.database.windows.net';
+$host = 'onlinevotingsqlaerver.mysql.database.azure.com';
 $username = 'sqladmin';
 $password = 'Fastrack#28';
 $db_name = 'vote';
@@ -10,7 +10,7 @@ $con = mysqli_init();
 // Establish the connect
 
 
-$con=mysqli_connect('onlinevotingsqlaerver.database.windows.net', 'sqladmin' , 'Fastrack#28', 'vote');
+$con=mysqli_connect('onlinevotingsqlaerver.mysql.database.azure.com', 'sqladmin' , 'Fastrack#28', 'vote');
 
 
 //If connection failed, show the error
